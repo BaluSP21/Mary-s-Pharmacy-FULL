@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+body {
+  background-image: url('img/f34.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  */
+}
+
+
+
+
+
+
+#Service .titulo h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+#Service .box {
+  width: 10%;
+  /* Reduza a largura da caixa para 60% do tamanho original */
+  height: 10%;
+  /* Reduza a altura da caixa para 60% do tamanho original */
+}
+
+
+#Service .box img {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#Service .box h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#Service .box p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#Service .container input[type=radio] {
+  display: none;
+}
+
+#Service .container .card {
+  position: absolute;
+  width: 40%;
+  height: 80;
+  top: -120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0px 0px 20px 9px hsl(0, 78%, 25%);
+  transition: 0.99s ease;
+  cursor: pointer;
+}
+
+#Service .container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#Service .container .card button {
+  padding: 9px 25px;
+  background: #9e2626;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: 0.8s ease;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 180px;
+  border-radius: 15px;
+
+
+
+
+}
+
+
+#Service .container .cards {
+  position: sticky;
+
+  height: 100vh;
+}
+
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2 {
+  transform: translateX(-100%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1 {
+  transform: translateX(100%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+.titulo {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 40px;
+  text-shadow: 0 0 1px #000000;
+  color: #ffffff;
+}
+
+button {
+  padding: 10px 20px;
+  background: #59bbb2;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: 0.8s ease;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 180px;
+}
+
+button:hover {
+  border: 2.1px #602525;
+  background: #602525;
+  color: #fff;
+  transform: scale(1.5);
+}
+
+.navbar-toggler {
+  background-color: #fff !important;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -450px;
+}
+
+.audio {
+  width: 250px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1em;
+  background-color: #ffffff;
+  color: white;
+  box-shadow: 1px 1px 20px 1px rgb(86, 24, 24);
+  flex: 1 1 250px;
+  margin: 1em;
+  border-radius: 5px;
+}
+
+.audio img {
+  width: 200px;
+  height: 200px;
+  margin: 0.5em;
+}
+
+.audio h2 {
+  font-weight: 500;
+  font-size: medium;
+  margin: 0.5em;
+}
+
+.audio p {
+  font-size: small;
+  font-weight: 300;
+  text-align: center;
+  margin: 0.5em;
+}
+
+/* Estilos para a barra de navegação */
+
+
+/* Estilos para o logotipo */
+.logo {
+  width: 100px;
+  /* Defina o tamanho do logotipo conforme necessário */
+  height: 50px;
+  /* Defina o tamanho do logotipo conforme necessário */
+  background: url('img/farma.jpg') center/contain no-repeat;
+  /* Substitua 'seu-logo.png' pelo caminho do seu logotipo */
+}
+
+/* Estilos para a lista de links na versão desktop */
+.desktop-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.desktop-menu a {
+  text-decoration: none;
+  color: #fff;
+  /* Cor dos links na versão desktop */
+}
+
+/* Estilos para o ícone de menu na versão mobile */
+.mobile-menu i {
+  font-size: 24px;
+  /* Tamanho do ícone de menu */
+  cursor: pointer;
+}
+
+/* Estilos para a lista de links na versão mobile */
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  /* Ocultar a lista de links na versão mobile por padrão */
+  background-color: #ffffff;
+  /* Cor de fundo do menu mobile */
+  position: absolute;
+  top: 60px;
+  /* Ajuste a posição conforme necessário */
+  right: 0;
+}
+
+.mobile-menu li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mobile-menu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  /* Cor dos links no menu mobile */
+}
+
+/* Estilos para mostrar a lista de links na versão mobile quando o ícone é clicado */
+.mobile-menu.active ul {
+  display: block;
+
+
+}
